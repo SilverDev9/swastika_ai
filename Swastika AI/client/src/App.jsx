@@ -16,6 +16,7 @@ function App() {
     axios.post('https://swastika-ai.onrender.com/ai/chat',{prompt:prompt})
     .then(response => {
     setReply(response.data.result.choices[0].message.content)
+    setPrompt('')
 })
 .catch(error => {
   console.error(error);
