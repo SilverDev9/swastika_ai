@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios';
-
+import logo from './assets/images.png';
 import './App.css'
 
 function App() {
@@ -34,6 +34,8 @@ function App() {
 
   return (
     <>
+    <img src={logo} className="App-logo" alt="logo" />
+    <br></br>
     <label htmlFor="">Enter Prompt</label>
     <br />
     <input type="text" value={prompt} onChange={(e)=>{handlePrompt(e);}} onKeyDown={(e)=>handleKeyDown(e)} />
