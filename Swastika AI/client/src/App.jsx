@@ -36,10 +36,10 @@ function App() {
     <>
     <img src={logo} className="App-logo" alt="logo" />
     <br></br>
-    <label htmlFor="">Enter Prompt</label>
+    <label htmlFor="">Ask Question</label>
     <br />
     <input type="text" value={prompt} onChange={(e)=>{handlePrompt(e);}} onKeyDown={(e)=>handleKeyDown(e)} />
-    <button onClick={()=>{handleSubmit()}}  >Send</button>
+    <button onClick={()=>{handleSubmit()}} >Ask</button>
     <h3>{reply}</h3>
     </>
   )
