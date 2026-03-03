@@ -19,7 +19,7 @@ function App() {
 
 
         let replyStr = response.data.result.choices[0].message.content
-        replyStr = replyStr.split("| ")
+        replyStr = replyStr.split("*")
         replyStr = replyStr.map((i) => i.trim())
         console.log(replyStr);
         setReply(replyStr)
@@ -57,31 +57,6 @@ function App() {
         <input type="text" className='w-full h-full p-3 outline-none ' placeholder='Ask Me Anythng' value={prompt} onChange={(e) => { handlePrompt(e); }} onKeyDown={(e) => handleKeyDown(e)} />
         <button className='rounded-4xl' onClick={() => { handleSubmit() }} >Ask</button>
       </div>
-
-      {/*
-    
-    <label htmlFor="">Ask Question</label>
-    
-    <input type="text" value={prompt} onChange={(e)=>{handlePrompt(e);}} onKeyDown={(e)=>handleKeyDown(e)} />
-    <button onClick={()=>{handleSubmit()}}  >Ask</button>
-    <h3>{reply}</h3>
-    
-    <div className='grid grid-cols-5 h-screen text-center'>  
-    
-      <div className='col-span-1 bg-zinc-800'>
-      </div>
-      <img src={logo} className="App-logo" alt="logo" />
-      <div className='col-span-4'>
-      <div className='container h-90'>
-
-      </div>
-      
-      <div className='bg-zinc-800 w-full p-1 pr-5 text-white m-auto rounded-4xl border border-zinc-400 flex h-16'>
-      <input type="text" className='w-full h-full p-3 outline-none' placeholder='Ask Me Anythng' value={prompt} onChange={(e)=>{handlePrompt(e);}} onKeyDown={(e)=>handleKeyDown(e)} />
-      <button className='rounded-4xl ' >Ask</button>
-      </div>
-      </div>
-      </div>  */}
     </>
   )
 }
