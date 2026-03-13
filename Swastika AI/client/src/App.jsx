@@ -14,7 +14,7 @@ function App() {
   }
 
   const handleSubmit = () => {
-    axios.post('http://localhost:3000/ai/chat', { prompt: prompt })
+    axios.post('https://swastika-ai.onrender.com/ai/chat', { prompt: prompt })
       .then(response => {
 
 
