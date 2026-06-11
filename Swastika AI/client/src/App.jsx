@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { formatTextToElements } from './formatUtils.jsx'
 import logo from './assets/logo.png'
 
-const API_URL = 'http://localhost:3000/ai/chat'
+const API_URL = 'https://swastika-ai.onrender.com/ai/chat'
 
 function App() {
   const [prompt, setPrompt] = useState('')
