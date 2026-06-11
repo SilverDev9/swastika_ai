@@ -117,8 +117,7 @@ function App() {
           <div className="brand">
             <img src={logo} alt="Logo" className="site-logo" />
             <div>
-              <h1>Swastika AI Chat</h1>
-              <p>Connects to the backend and renders replies in chat format.</p>
+              <h1>Swastika AI</h1>
             </div>
           </div>
           <button
