@@ -11,7 +11,7 @@ configDotenv();
 const app = express();
 
 const corsOptions ={
-    origin:'http://localhost:5173', 
+    origin:'https://swastika-ai-frontend.onrender.com', 
     credentials:true,            //access-control-allow-credentials:true
     
     optionSuccessStatus:200
